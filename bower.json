@@ -1,0 +1,22 @@
+{
+  "name": "session6",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Vishal-Kumar <kumarfromatlanta@hotmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/dreamerkumar/mean-training",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.9",
+    "bootstrap": "^3.3.7",
+    "less": "^2.7.1"
+  }
+}
