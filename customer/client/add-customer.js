@@ -1,14 +1,11 @@
 angular.module('mtCustomer')
     .component('addCustomer', {
         templateUrl: '/customer-client/add-customer.html',
-        controller: function($http, $state) {
+        controller: function($http, $state, CustomerService) {
             var ctrl = this;
 
             ctrl.addCustomer = function() {
-                $http.post('/customer', {
-                    firstName: ctrl.firstName,
-                    lastName: ctrl.lastName,
-                }).then(function(status){
+                CustomerService.addCustomer(ctrl.firstName, ctrl.lastName).then(function(status){
                     console.log(status);
                     $state.go('customerList');
                 }).catch(function(error){
