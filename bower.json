@@ -17,6 +17,7 @@
   "dependencies": {
     "angular": "^1.5.9",
     "bootstrap": "^3.3.7",
-    "less": "^2.7.1"
+    "less": "^2.7.1",
+    "angular-ui-router": "ui-router#^0.3.2"
   }
 }

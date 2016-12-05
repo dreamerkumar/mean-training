@@ -3,6 +3,7 @@
         <script src="../bower_components/jquery/dist/jquery.js"></script>
         <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
         <script src="../bower_components/angular/angular.js"></script>
+        <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
         <link rel="stylesheet/less" type="text/css" href="../bower_components/bootstrap/less/bootstrap.less"></link>
         <script src="../bower_components/less/dist/less.js"></script>
 
@@ -11,8 +12,11 @@
     </head>
     <body>
         <h1>Our MEAN Application</h1>
+        
+        <a class="btn btn-info" ui-sref="customerList">Customer List</a>
+        <a class="btn btn-info" ui-sref="addCustomer">Add Customer</a>
 
-
-        <customer-list></customer-list> 
+        <ui-view></ui-view>
+        
     </body>
 </html>
