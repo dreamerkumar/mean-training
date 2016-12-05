@@ -7,7 +7,7 @@ angular.module('mtApp', ['ui.router', 'mtCustomer'])
             })
             .state('addCustomer',{
                 url: '/add-customer',
-                template: 'Add customer markup goes here'
+                template: '<add-customer></add-customer>'
             });
 
     });
