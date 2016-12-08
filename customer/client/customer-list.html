@@ -1,5 +1,6 @@
 <h1>This is the customer list</h1>
-<div class="row" ng-repeat="customer in $ctrl.customerList">
-    <div class="col-xs-6">{{customer.firstName}}</div>
-    <div class="col-xs-6">{{customer.lastName}}</div>
+<div class="row" ng-repeat="customer in $ctrl.customerList | remove:5">
+    <div class="col-xs-4">{{customer.firstName}}</div>
+    <div class="col-xs-4">{{customer.lastName}}</div>
+    <div class="col-xs-4"><sample first="{{customer.firstName}}"></sample></div>
 </div>
