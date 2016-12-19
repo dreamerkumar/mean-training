@@ -1,18 +1,22 @@
 angular.module('mtCustomer')
     .component('customerList', {
         templateUrl: '/customer-client/customer-list.html',
-        controller: function($http, CustomerService){
+        controller: function(CustomerService){
             var ctrl = this;
             
-            CustomerService.getCustomerList().then(function(result){
-                ctrl.customerList = result.data;
-            })
-            .catch(function(err){
-                console.error('An error occured', err);
-            });
+            ctrl.$onInit = function() {
+                CustomerService.getCustomerList().then(function(result){
+                    ctrl.customerList = result.data;
+                })
+                .catch(function(err){
+                    console.error('An error occured', err);
+               });
+            };
 
-            ctrl.someFunction = function(){
-                console.log('I just got called. Now I should show the next page of records.');                
+            //returns the value of customer list
+            ctrl.getCustomerList = function(){
+                return ctrl.customerList;
+                //console.log('I just got called. Now I should show the next page of records.');                
             };
 
         }
