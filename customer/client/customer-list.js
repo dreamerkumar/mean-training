@@ -5,6 +5,7 @@ angular.module('mtCustomer')
             var ctrl = this;
             
             ctrl.$onInit = function() {
+                ctrl.pageHeading = 'This is the customer list';
                 CustomerService.getCustomerList().then(function(result){
                     ctrl.customerList = result.data;
                 })
