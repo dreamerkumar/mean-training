@@ -24,9 +24,9 @@ app.use(bodyParser.json());
 
 var customerRouter = require('./customer/customer-route');
 app.use('/customer', customerRouter);
-app.use('/app', express.static('client'));
-app.use('/customer-client', express.static('customer/client'));
 
+app.use('/app', express.static('dist'));
+app.use('/customer-client', express.static('customer/client'));
 
 app.use('/bower_components', express.static('bower_components'));
 

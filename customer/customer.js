@@ -88,7 +88,7 @@ var customer = {
         });
     }
 
-}
+};
 
 
 module.exports = customer;

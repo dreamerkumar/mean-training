@@ -7,5 +7,5 @@ angular.module('mtCustomer')
                 });
             }
             return list;
-        }
+        };
     });

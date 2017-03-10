@@ -8,7 +8,7 @@
         <link rel="stylesheet/less" type="text/css" href="../bower_components/bootstrap/less/bootstrap.less"></link>
         <script src="../bower_components/less/dist/less.js"></script>
 
-        
+        <!--(if target dev)><!-->
         <script src="app.js"></script>
         <script src="/customer-client/customer.js"></script>
         <script src="/customer-client/customer-service.js"></script>
@@ -17,9 +17,11 @@
         <script src="/customer-client/remove-invalid-filter.js"></script>
         <script src="/customer-client/sample-directive.js"></script>
         <script src="/customer-client/pagination.js"></script>
+        <!--<!(endif)-->
         
-        
-        
+        <!--(if target dist)><!-->
+        <script src="mean-training.min.js"></script>
+        <!--<!(endif)-->
     </head>
     <body>
         <h1>Our MEAN Application</h1>

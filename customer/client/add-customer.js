@@ -11,6 +11,6 @@ angular.module('mtCustomer')
                 }).catch(function(error){
                     console.error(error);
                 });
-            }
+            };
         }
     });

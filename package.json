@@ -14,9 +14,16 @@
     "mongoose": "^4.7.0"
   },
   "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-targethtml": "^0.2.6",
     "jasmine": "^2.5.2",
     "karma": "^1.3.0",
     "karma-jasmine": "^1.1.0",
-    "karma-phantomjs-launcher": "^1.0.2"
+    "karma-phantomjs-launcher": "^1.0.2",
+    "ng-annotate": "^1.2.1"
   }
 }
