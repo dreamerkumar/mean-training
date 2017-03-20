@@ -31,3 +31,5 @@ app.use('/customer-client', express.static('customer/client'));
 app.use('/bower_components', express.static('bower_components'));
 
 app.listen(3000);
+
+module.exports = app;
